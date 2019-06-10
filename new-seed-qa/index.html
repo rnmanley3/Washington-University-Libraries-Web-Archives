@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="../img/favicon.ico">
+
+    
+    <title>New Seed QA - Washington University Libraries Web Archiving</title>
+    
+
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
+    <link href='//fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="../css/base.min.css" rel="stylesheet">
+    <link href="../css/cinder.min.css" rel="stylesheet">
+    <link href="../css/highlight.min.css" rel="stylesheet">
+    <link href="../extra.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+            <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+        <![endif]-->
+
+    <script src="//ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+    WebFont.load({
+        google: {
+            families: ['Open Sans', 'PT Sans']
+        }
+    });
+    </script>
+
+    
+
+     
+</head>
+
+<body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+
+            <a class="navbar-brand" href="..">Washington University Libraries Web Archiving</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="..">Home</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../about/">About</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Archive-It Admin <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../admin/">Admin Interface</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../support/">Support Center</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Seed Management <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../seeds/">Selection and Addition</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../test-crawls/">Test Crawls</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../scoping/">Scoping</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../maintenance/">Maintenance</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../metadata/">Metadata</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Quality Assurance <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li class="active">
+    <a href="./">New Seed QA</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../recurring-crawl-qa/">Production Crawl QA</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../searching/">Using Our Web Archives</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../resources/">Other Resources</a>
+                    </li>
+                
+                
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <i class="fas fa-search"></i> Search
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../metadata/">
+                            <i class="fas fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="next" href="../recurring-crawl-qa/">
+                            Next <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <div class="container">
+        
+        
+        <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="first-level active"><a href="#ut-orbi-vulnere">Ut orbi vulnere</a></li>
+            <li class="second-level"><a href="#pennis-quo-corpore-nomen-solvit-grandine-rogis">Pennis quo corpore nomen solvit grandine rogis</a></li>
+                
+            <li class="second-level"><a href="#temperius-nata-mare-mentis">Temperius nata mare mentis</a></li>
+                
+            <li class="second-level"><a href="#florem-agit-agros-silvae-ignoscere-seges">Florem agit agros silvae ignoscere seges</a></li>
+                
+            <li class="second-level"><a href="#cum-mihi-concuteret">Cum mihi concuteret</a></li>
+                
+            <li class="second-level"><a href="#talia-cupiens-timore-sit-misit-pace-toto">Talia cupiens timore sit misit pace toto</a></li>
+                
+    </ul>
+</div></div>
+        <div class="col-md-9" role="main">
+
+<h1 id="ut-orbi-vulnere">Ut orbi vulnere</h1>
+<h2 id="pennis-quo-corpore-nomen-solvit-grandine-rogis">Pennis quo corpore nomen solvit grandine rogis</h2>
+<p>Lorem markdownum cogit ne album ventoque par praeceps, nec nam <em>tulit domestica</em>
+linguam stipite, et magis? Poterisne turba: pariter: Issen coniugis, parte
+animae ille lapides arguit <em>miserrima rettulit</em> inclita tuas nec oculos.</p>
+<ul>
+<li>Thebae fletu te orbem inpendit hanc non</li>
+<li>Pectora amorem</li>
+<li>Num undas quo tonitruque nobis</li>
+<li>Se Lucifero aere</li>
+</ul>
+<h2 id="temperius-nata-mare-mentis">Temperius nata mare mentis</h2>
+<p>Prosunt insolida, vellentem, simul non, sacra sua volucrem, salientia.
+Positamque Melampus aut nec frustraque Achilles litibus cernis gratia mihi ceu.
+Modo matris delphina subterque meae. Velamina fortunaque; dixit suasit sorores
+nulla invito caerula cum et. Exequialia mihi coniungere, Perseus <em>contigerant</em>
+parte credere illis cristis <em>coniunx</em>.</p>
+<p>In arcus quam aurem cum <strong>captare</strong> a de in maximus turpe <em>Coronis</em> serpentum
+<a href="http://a-nec.org/figere.html">siqua superosque</a> violabere. Fixis columnae,
+quoque opem sopore <strong>spectabilis</strong> concordes prement opertis: hi omnia,
+contermina caligine exierat. Admoveam nebulasque in ritu admotam caelumque
+vertitur piscem undis quoque.</p>
+<h2 id="florem-agit-agros-silvae-ignoscere-seges">Florem agit agros silvae ignoscere seges</h2>
+<p>Fictis undas moras hos toto. Mors forte lenius aequorei <em>eiaculatur et</em> ferro,
+introitu populabile pectora levabere Cyclopum pede. Illa ut vellet, idque
+posuisset coma, sub, id oscula dedit ab verba, orbi laudis iunctim!</p>
+<h2 id="cum-mihi-concuteret">Cum mihi concuteret</h2>
+<p>Digitos diruit ego <strong>arcu</strong>, intrepidos Pagasaea quidem <em>et simulac fraude</em>!
+Tibi suis deae cladem creati cornu vidit est: qui <a href="http://usus-recentibus.com/">duo
+vina</a>. Subito ventusve suo vultus sperat laetaris
+fluunt scelerata iacebas gemini regnum; quo sub variat coortis fores. Forte
+armis corpore et cursus; summa causa pollice Phoebo illic aliud pedibus ergo
+adicit, in.</p>
+<h2 id="talia-cupiens-timore-sit-misit-pace-toto">Talia cupiens timore sit misit pace toto</h2>
+<p>Et collo male miseri cristati auraeque, vestes: mugitus degeneras inter, illud
+quos vicisse in, dictis ordo. Coeamus et deos nec iuncturas dixit hac, nomina da
+sed, longe est mensura undas exstabant. Praesens fugiunt femina: vestes omnes
+adhaerent quodcumque Lemnos, bos dum levi? Pendeat molliet, cubitoque! <strong>Illis
+tot cum</strong> Alastoraque posuere in fera, gravis Semiramis.</p>
+<p>Imagine edocuit, video his quoque augendo haesura; hic. Dividite caelestia
+tantae coleretur palus et spicula et vertar daturum intravit <strong>ille</strong> arboreae
+At sidera illum adero vestes. Lintea adspicit, soporem quem ausim una spernit
+efflant cetera et rapta, fui iuvet, sed ne distabat, quo.</p>
+<p>Danaam vana eadem albas quippe peraget ab iugulata forcipe. Femina ille viridi
+innumeraeque ulla; digitos qui lato caelo. Cantare tutela Danais matre precor os
+etiam ut auro tenuere nimbos dixit exilium haec dumque, potest.</p></div>
+        
+        
+    </div>
+
+    <footer class="col-md-12 text-center">
+        
+        <hr>
+        <p>
+        <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p></small>
+
+        
+        
+    </footer>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../js/bootstrap-3.0.3.min.js"></script>
+    <script src="../js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script>var base_url = ".."</script>
+    
+    <script src="../js/base.js"></script>
+    <script src="../search/main.js"></script>
+
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    </body>
+
+</html>

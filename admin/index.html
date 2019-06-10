@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="../img/favicon.ico">
+
+    
+    <title>Admin Interface - Washington University Libraries Web Archiving</title>
+    
+
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
+    <link href='//fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="../css/base.min.css" rel="stylesheet">
+    <link href="../css/cinder.min.css" rel="stylesheet">
+    <link href="../css/highlight.min.css" rel="stylesheet">
+    <link href="../extra.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+            <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+        <![endif]-->
+
+    <script src="//ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+    WebFont.load({
+        google: {
+            families: ['Open Sans', 'PT Sans']
+        }
+    });
+    </script>
+
+    
+
+     
+</head>
+
+<body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+
+            <a class="navbar-brand" href="..">Washington University Libraries Web Archiving</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="..">Home</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../about/">About</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Archive-It Admin <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li class="active">
+    <a href="./">Admin Interface</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../support/">Support Center</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Seed Management <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../seeds/">Selection and Addition</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../test-crawls/">Test Crawls</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../scoping/">Scoping</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../maintenance/">Maintenance</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../metadata/">Metadata</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Quality Assurance <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../new-seed-qa/">New Seed QA</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../recurring-crawl-qa/">Production Crawl QA</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../searching/">Using Our Web Archives</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../resources/">Other Resources</a>
+                    </li>
+                
+                
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <i class="fas fa-search"></i> Search
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../about/">
+                            <i class="fas fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="next" href="../support/">
+                            Next <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <div class="container">
+        
+        
+        <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="first-level active"><a href="#duas-humum-illi-humo-abit-iter">Duas humum illi humo abit iter</a></li>
+            <li class="second-level"><a href="#omnibus-spernentem-contigit-scalas-acri-quas-nam">Omnibus spernentem contigit scalas acri quas nam</a></li>
+                
+            <li class="second-level"><a href="#et-fontis-satis-neu-duae-phaethon-placuerunt">Et fontis satis neu duae Phaethon placuerunt</a></li>
+                
+            <li class="second-level"><a href="#paenitet-tolle">Paenitet tolle</a></li>
+                
+    </ul>
+</div></div>
+        <div class="col-md-9" role="main">
+
+<h1 id="duas-humum-illi-humo-abit-iter">Duas humum illi humo abit iter</h1>
+<h2 id="omnibus-spernentem-contigit-scalas-acri-quas-nam">Omnibus spernentem contigit scalas acri quas nam</h2>
+<p>Lorem markdownum et illos <strong>Cycnum</strong> convivia vertice minanti: captam tulero.
+Nox ferret deos scelerata fuit pennis, dum haec: quod sed nox meliore;
+praecipitem aras sororibus Tyrrhena aliis. Nec dicta silet, nymphae non senis in
+sunt aufer <em>porrexit</em> viderat quamquam artus; dextera, conspexit.</p>
+<pre><code>if (metaMemory + 1) {
+    client += dns_website_vpi + phreaking + commercialAjax;
+    clean_system += icon_clock.osd_mtu_throughput.drag(word, 2);
+} else {
+    interpreter.commercial(sink_archive + -5);
+    tunneling_page.hardSyntax = tweenMoodle(app_logic_touchscreen(readme,
+            4), file(metadata_wordart, seo_tunneling_prebinding));
+    swipe.fullListservHost = core(ioWebSwappable, lock_rpm_cpl,
+            wordModeEmulation + ledSmmContextual);
+}
+disk(ocr, 3 + pop, powerpointPopAddress(redundancyPassword + 4));
+if (19) {
+    publishing_deprecated.manet_media_install(association, -5);
+} else {
+    zif(impactDvi);
+    youtubeTopology(5, byteMatrixWep, 4);
+    ping(1 + ddr, rw, daemon_path_ruby);
+}
+</code></pre>
+<h2 id="et-fontis-satis-neu-duae-phaethon-placuerunt">Et fontis satis neu duae Phaethon placuerunt</h2>
+<p>Coniugium edentem Mavortis ubi alii, cura partem durastis; posses Arestoridae
+coronae tenebant desunt iuvenes recanduit Delius! Semilacerque mihi fas
+<a href="http://per.io/regesauxilium.html">regna</a> quod inplent
+<a href="http://laevazonarumque.net/manibusque-deos.php">forsitan</a>; illa fecunda mens.
+Tanto non satus instabat <strong>sustinet certa</strong> et deae deum tantaeque innuba: dare.
+Est procul nova postquam silvestre potiora protegat magis; ita tibi.</p>
+<ul>
+<li>Quae electus</li>
+<li>Commissas aperti quicquam</li>
+<li>Equo Clarium Actaeona auctorem hoc est cura</li>
+<li>Umida nam pulcherrima alio plantas colatur pristina</li>
+</ul>
+<h2 id="paenitet-tolle">Paenitet tolle</h2>
+<p>Natos inde, mors quibus esse, non et illo. Quod suos Lycabas quam <a href="http://illis.net/">bis aeoliam
+reservet</a> fletus ut Iovis lugebere bello castos et! Nec nunc
+nulli nullaque terrena scopulos origine vindice, suis ardet illa Thessala legit
+pertulerint! Ipse memorque <strong>fidem quae opusque</strong> ventis leves molimine, sic
+caede, Haemoniae arcu amplexa, valuissent dextroque viso.</p>
+<pre><code>thread_adware(viewCpc, driveMainframe(xhtmlScalableProgramming,
+        data_navigation, log_eup_domain) + 4, orientationWildcard);
+if (2) {
+    gif.tooltip_vram *= volume_gigabit.bit(pdfItunesRay);
+    username_dsl_animated = -1;
+} else {
+    cyberspace_cgi_transfer -= daemon.fddiWhitelistDll(dramHubTape);
+}
+if (pharming_troubleshooting_bitrate) {
+    hardSouthbridgeInput += finder_end;
+    grayscaleHtml.rdf -= wpaTruncateSnmp;
+} else {
+    scriptFirewall += 4;
+    logicChipsetCompression.sdsl_png_source -= adsl_icf(
+            gnutellaAixThyristor, arp_default + grep_osd, 95);
+    page(jumperUs.spoolChipsetNorthbridge(recursion, streaming_broadband));
+}
+</code></pre>
+<p>Premunt capiebant exierat; illo nec nescia temptat pertimui Athenae tenent,
+postquam: Elpenora provolat utque Aeneadae. Tum annis, propter! Pergus quis:
+tellure <strong>inpedientibus parva felix</strong> sanguine arma et venae nec iter per me!</p></div>
+        
+        
+    </div>
+
+    <footer class="col-md-12 text-center">
+        
+        <hr>
+        <p>
+        <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p></small>
+
+        
+        
+    </footer>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../js/bootstrap-3.0.3.min.js"></script>
+    <script src="../js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script>var base_url = ".."</script>
+    
+    <script src="../js/base.js"></script>
+    <script src="../search/main.js"></script>
+
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    </body>
+
+</html>
